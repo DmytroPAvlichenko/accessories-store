@@ -1,21 +1,20 @@
-import React from 'react';
 import './App.scss';
+import { Outlet, useSearchParams } from 'react-router-dom';
+import { Header } from './components/Header/Header';
+import { Footer } from './components/Footer/Footer';
+import { BurgerMenu } from './components/BurgerMenu';
 
-interface Props {
-  onClick: () => void;
-  children: React.ReactNode;
-}
+export const App = () => {
+  const [searchParams] = useSearchParams();
+  const menuStatus = searchParams.get('menu') || '';
 
-export const Provider: React.FC<Props> = React.memo(({ onClick, children }) => (
-  <button type="button" onClick={onClick}>
-    {children}
-  </button>
-));
-
-export const App: React.FC = () => {
   return (
-    <div className="starter">
-      <Provider onClick={() => ({})}>TodoList</Provider>
-    </div>
+    <>
+      <Header />
+      {menuStatus && <BurgerMenu />}
+      {!menuStatus && <Outlet />}
+
+      {!menuStatus && <Footer />}
+    </>
   );
 };

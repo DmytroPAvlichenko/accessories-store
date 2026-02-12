@@ -1,9 +1,39 @@
-# React TypeScript Starter Pack
+# Accessories-store
 
-To use this template click `Use this template`
+A responsive multi-page online store for tech products.
+The project features:
 
-### Available Scripts
+Multiple pages (Home, Product listing, Product details, Cart, Favorites)
 
-`Deploy` - available to deploy your application to gh-pages, to deploy the project, change the second line of code in package.json, specifically the homepage value, from "." to the repository name
+Responsive design for mobile, tablet, and desktop
 
-`SCSS Preprocessor` - available to write your styles with modern style language
+Shopping cart functionality
+
+Favorites for users to save products
+
+Product pages with detailed information
+🔗 Live Preview
+
+
+## Technologies Used
+📌 List the key technologies and frameworks you used in the project
+
+Example:
+
+HTML,
+SCSS,
+JavaScript,
+React,
+TypeScript,
+
+## Getting Started
+Follow these steps to set up the project locally
+
+1. Clone the repo
+   git clone https://github.com/DmytroPAvlichenko/accessories-store.git
+   cd accessories-store
+2. Install dependencies
+   npm install
+3. Run the project locally
+npm start
+
