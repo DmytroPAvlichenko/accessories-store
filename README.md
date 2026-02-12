@@ -12,6 +12,7 @@ Shopping cart functionality
 Favorites for users to save products
 
 Product pages with detailed information
+
 🔗 Live Preview
 - [DEMO LINK](https://dmytropavlichenko.github.io/accessories-store/)
 
@@ -23,9 +24,11 @@ Product pages with detailed information
 Example:
 
 HTML,
+
 SCSS,
-JavaScript,
+
 React,
+
 TypeScript,
 
 ## Getting Started
