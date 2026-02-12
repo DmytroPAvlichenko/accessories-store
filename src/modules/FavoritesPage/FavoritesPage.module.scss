@@ -1,13 +1,14 @@
 @use '../../constants/mixin' as *;
 
 .favorites {
+  background-color: var(--bg-page);
+  row-gap: 24px;
+
   @include page-grit;
   @include padding-inline;
   @include padding-block;
   @include min-height-page;
 
-  background-color: var(--bg-page);
-  row-gap: 24px;
 
   @include on-tablet {
     row-gap: 32px;
@@ -55,13 +56,13 @@
 
   &__list {
     grid-column: 1 / -1;
-
-    @include page-grit;
-
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+
     justify-items: center;
     row-gap: 40px;
 
+    @include page-grit;
+    
     @include on-desktop {
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     }

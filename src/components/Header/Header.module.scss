@@ -1,8 +1,6 @@
 @use '../../constants/mixin' as *;
 
 .header {
-  @include transform-theme;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -19,6 +17,8 @@
 
   border-bottom: 1px solid var(--color-border-header);
 
+  @include transform-theme;
+  
   @include on-desktop {
     padding-inline-start: 24px;
     height: 64px;

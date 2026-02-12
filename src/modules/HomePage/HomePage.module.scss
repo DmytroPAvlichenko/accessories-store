@@ -1,11 +1,12 @@
 @use '../../constants/mixin' as *;
 
 .home-page {
+  background-color: var(--bg-page);
+  
   @include page-grit;
   @include padding-inline;
   @include transform-theme;
 
-  background-color: var(--bg-page);
 
   &__title {
     grid-column: 1 / -1;

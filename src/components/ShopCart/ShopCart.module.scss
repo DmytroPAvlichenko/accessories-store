@@ -1,8 +1,6 @@
 @use '../../constants/mixin' as *;
 
 .card {
-  @include transform-theme;
-
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -13,6 +11,8 @@
 
   background-color: var(--bg-product);
 
+  @include transform-theme;
+  
   @include on-tablet {
     grid-column: 1 / -1;
     flex-direction: row;

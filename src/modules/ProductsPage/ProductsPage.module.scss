@@ -1,16 +1,15 @@
 @use '../../constants/mixin' as *;
 
 .products-list {
+  align-content: start;
+  row-gap: 24px;
+  background-color: var(--bg-page);
+
   @include padding-block;
   @include padding-inline;
   @include min-height-page;
   @include page-grit;
 
-  align-content: start;
-
-  row-gap: 24px;
-
-  background-color: var(--bg-page);
 
   &__info {
     grid-column: 1 / -1;
@@ -49,10 +48,9 @@
 
 .dropdown {
   grid-column: 1 / -1;
+  gap: 16px;
 
   @include page-grit;
-
-  gap: 16px;
 
   @include on-tablet {
     grid-template-columns: repeat(var(--columns), 32px);
@@ -163,12 +161,11 @@
 
 .list {
   grid-column: 1 /-1;
-
-  @include page-grit;
-
   grid-template-columns: 1fr;
   row-gap: 40px;
 
+  @include page-grit;
+  
   @include on-tablet {
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   }

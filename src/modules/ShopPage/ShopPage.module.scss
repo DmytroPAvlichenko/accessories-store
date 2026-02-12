@@ -1,17 +1,17 @@
 @use '../../constants/mixin' as *;
 
 .shop {
-  @include page-grit;
-  @include padding-inline;
-  @include padding-block;
-  @include min-height-page;
-
   row-gap: 24px;
 
   align-content: start;
   align-items: start;
 
   background-color: var(--bg-page);
+
+  @include page-grit;
+  @include padding-inline;
+  @include padding-block;
+  @include min-height-page;
 
   @include on-tablet {
     padding-top: 40px;

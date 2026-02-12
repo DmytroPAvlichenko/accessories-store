@@ -3,11 +3,11 @@
 .not-product {
   display: flex;
   flex-direction: column;
+  background-color: var(--bg-page);
 
   @include min-height-page;
   @include padding-inline;
 
-  background-color: var(--bg-page);
 
   &__title {
     font-weight: 800;

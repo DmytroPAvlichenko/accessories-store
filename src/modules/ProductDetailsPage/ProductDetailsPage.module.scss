@@ -1,14 +1,15 @@
 @use '../../constants/mixin' as *;
 
 .details {
+  row-gap: 16px;
+
+  background-color: var(--bg-page);
+
   @include padding-inline;
   @include padding-block;
   @include page-grit;
   @include min-height-page;
 
-  row-gap: 16px;
-
-  background-color: var(--bg-page);
 
   @include on-desktop {
     grid-template-columns: repeat(24, 32px);

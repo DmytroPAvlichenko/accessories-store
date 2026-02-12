@@ -7,11 +7,12 @@
 }
 
 .skeleton {
+  row-gap: 8px;
+  
   @include page-grit;
   @include padding-inline;
   @include padding-block;
 
-  row-gap: 8px;
 
   &__title {
     grid-column: 1/-1;

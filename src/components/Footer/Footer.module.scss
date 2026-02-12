@@ -1,16 +1,15 @@
 @use '../../constants/mixin' as *;
 
 .footer {
-  @include padding-inline;
-  @include page-grit;
-
-
   background-color: var(--bg-header);
 
   row-gap: 32px;
   padding-block: 32px;
 
   border-top: 1px solid var(--color-button-favorite-border-active);
+
+  @include padding-inline;
+  @include page-grit;
 
   @include on-tablet {
     flex-direction: row;
@@ -23,7 +22,7 @@
     text-decoration: none;
     height: 32px;
 
-    @include on-tablet{
+    @include on-tablet {
       grid-column: 1 / 4;
     }
   }
@@ -46,7 +45,7 @@
       justify-content: space-between;
     }
 
-    @include on-desktop{
+    @include on-desktop {
       grid-column: 9/ 17;
     }
   }
@@ -74,7 +73,7 @@
       width: auto;
     }
 
-    @include on-desktop{
+    @include on-desktop {
       grid-column-start: 20;
     }
   }
