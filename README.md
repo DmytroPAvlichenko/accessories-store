@@ -32,7 +32,8 @@ TypeScript,
 Follow these steps to set up the project locally
 
 1. Clone the repo
-   git clone https://github.com/DmytroPAvlichenko/accessories-store.git
+   git clone [repository](https://github.com/DmytroPAvlichenko/accessories-store/)
+
    cd accessories-store
 2. Install dependencies
    npm install
