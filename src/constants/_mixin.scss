@@ -8,7 +8,9 @@
 }
 
 @mixin padding-inline {
-  padding-inline: 16px;
+    & {
+    padding-inline: 16px;
+  }
 
   @include on-tablet {
     padding-inline: 24px;
@@ -32,7 +34,9 @@
 }
 
 @mixin padding-block {
-  padding-block: 24px 64px;
+   &{
+    padding-block: 24px 64px;
+  }
 
   @include on-desktop {
     padding-bottom: 80px;

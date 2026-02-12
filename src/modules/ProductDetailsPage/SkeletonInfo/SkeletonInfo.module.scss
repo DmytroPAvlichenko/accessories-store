@@ -1,9 +1,9 @@
 @use '../../../constants/mixin' as *;
 
 .section {
-  @include min-height-page;
+  background-color: var(--bg-page);
 
-  background-color: var(--bg-page)
+  @include min-height-page;
 }
 
 .skeleton {
