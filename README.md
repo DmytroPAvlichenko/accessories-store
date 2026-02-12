@@ -13,6 +13,8 @@ Favorites for users to save products
 
 Product pages with detailed information
 🔗 Live Preview
+- [DEMO LINK](https://dmytropavlichenko.github.io/accessories-store/)
+
 
 
 ## Technologies Used
